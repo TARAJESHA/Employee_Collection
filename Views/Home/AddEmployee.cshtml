@@ -1,0 +1,110 @@
+﻿<div class="Container"> 
+
+     <div class="text-center">
+    <div class="heading">Get Employee Detials</div>
+    <form asp-controller="Home" asp-action="GetEmployee" method="post" >
+    <div>
+        <label class="lable">Employee ID Number:</label>
+
+        <input class="input" name="IdNumber" />
+    </div>  
+    <br/>
+     <button type="submit">submit</button>
+</form> 
+<br/>
+<div class="bar"></div>
+<br/> 
+
+<div class="heading">Get Salary Details</div> 
+<form asp-controller="Home" asp-action="GetSalary" method="post" >
+    <div>
+        <label class="lable">Employee ID Number:</label>
+
+        <input class="input" name="IdNumber" />
+    </div>
+    <br/>
+     <button type="submit">submit</button>
+</form> 
+<br/>
+<div class="bar"></div>
+<br/> 
+<div class="heading">Get Employee Contact Number</div> 
+<form asp-controller="Home" asp-action="GetPhoneNumber" method="post" >
+    <div>
+        <label class="lable">Employee ID Number:</label>
+
+        <input class="input" name="IdNumber" />
+    </div>
+    <br/>
+     <button type="submit">submit</button>
+</form> 
+
+    </div>
+
+
+
+    <div class="text-center">
+<div class="heading"> Add a New Employee</div>
+<form asp-controller="Home" asp-action="AddEmployee" method="post" >
+       <div >
+        <label class="lable">Employee ID Number:</label>
+        <input class="input" name="IdNumber" />
+    </div>
+    <br/>
+    <div>
+        <label  class="lable">First Name:</label>
+        <input class="input" name="firstName" />
+    </div>
+    <br/>
+    <div>
+        <label  class="lable">Last Name:</label>
+        <input class="input" name="lastName" />
+    </div>
+    <br/>
+    <div>
+        <label class="lable">Employee Type: Enter 1 for <br/> Full time else 0 for contract</label>
+        <input class="input" name="empyeeType" />
+    </div>
+    <br/>
+    <div>
+        <label class="lable">Phone Number:</label>
+        <input class="input" name="phoneNumber" />
+    </div>
+    <br/>
+    <div>
+        <label class="lable">Email Address:</label>
+        <input class="input" name="emailAddress" />
+    </div>
+    <br/>
+    <div>
+        <label class="lable">Mailing Address:</label>
+        <input class="input" name="mailingAddress" />
+    </div>
+    <br/>
+
+    <div>
+        <label class="lable">Base Salary:</label>
+        <input class="input" name="baseSalary" />
+    </div>
+    <br/>
+    <div> 
+     </div>
+     <br/>
+    <button  type="submit">Submit</button>
+</form>
+
+    </div>
+    </div>
+
+
+
+<div class="AddEmployee">
+    <br/>
+    <h1 style="color:blueviolet"><b>New Employee Succsesfully Added</b></h1>
+ 
+    <br/>
+    <lable style="display:inline-block"> Employee Id number :<h1> <b>@Model.IdNumber</b></h1></lable>
+<br/>
+<label>*...........................................*</label>
+<p style="color:orangered">Thank you for visiting our website</p>
+</div>

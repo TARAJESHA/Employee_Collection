@@ -1,0 +1,62 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.employeeSalary, .AddEmployee, .GetEmployee {
+    background-color: azure;
+    padding: 2em;
+    box-shadow: 0px 0px 2px 2px #000000;
+}
+.employeeSalary, .AddEmployee .GetEmployee > * {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start
+}
+.Container {
+    background-color: aliceblue;
+    box-shadow: 0px 0px 2px 2px #000000;
+    padding: 2em;
+    display: flex;
+    flex-direction: row !important;
+    gap:2em; 
+}
+.Container>* { 
+   
+}
+
+.text-center{
+    background-color:rgb(255, 255, 255, 50%);
+    box-shadow: 0px 0px 2px 2px #000000;
+    padding: 2em;
+    width:50%;
+}
+.heading {
+    font-size: 20px;
+    color: blueviolet ;
+        text-align:start
+}
+
+.input, .lable{
+    width: 45%;
+    text-align:start
+}
+.bar{
+    width: 100%;
+    padding: 1em 0em 1em 0;
+    border-top: 1px solid #000000;
+     
+}
